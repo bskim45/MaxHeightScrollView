@@ -1,6 +1,6 @@
-#MaxHeightScrollView [![Build Status](https://travis-ci.org/bskim45/MaxHeightScrollView.svg?branch=master)](https://travis-ci.org/bskim45/MaxHeightScrollView)
+#MaxHeightScrollView [![Build Status](https://travis-ci.org/bskim45/MaxHeightScrollView.svg?branch=master)](https://travis-ci.org/bskim45/MaxHeightScrollView) [ ![Download](https://api.bintray.com/packages/bskim45/maven/maxheightscrollview/images/download.svg) ](https://bintray.com/bskim45/maven/maxheightscrollview/_latestVersion)
 
-The **MaxHeightScrollView* *** is a android library allows to set maximum height of ScrollView(NestedScrollView).
+The **MaxHeightScrollView** is a android library allows to set maximum height of ScrollView(NestedScrollView).
 
 #Preview
 ##Demo
