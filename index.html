@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>MaxHeightScrollView by bskim45</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">MaxHeightScrollView</h1>
+      <h2 class="project-tagline">Android ScrollView widget with maximum height</h2>
+      <a href="https://github.com/bskim45/MaxHeightScrollView" class="btn">View on GitHub</a>
+      <a href="https://github.com/bskim45/MaxHeightScrollView/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/bskim45/MaxHeightScrollView/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="maxheightscrollview-" class="anchor" href="#maxheightscrollview-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>MaxHeightScrollView <a href="https://travis-ci.org/bskim45/MaxHeightScrollView"><img src="https://travis-ci.org/bskim45/MaxHeightScrollView.svg?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>The <strong>MaxHeightScrollView</strong> is a android library allows to set maximum height of ScrollView(NestedScrollView).</p>
+
+<h1>
+<a id="preview" class="anchor" href="#preview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Preview</h1>
+
+<h2>
+<a id="demo" class="anchor" href="#demo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demo</h2>
+
+<p>You can try demo application from <a href="https://github.com/bskim45/MaxHeightScrollView/raw/master/app/app.apk">here</a>, or you can clone this project and build your own.</p>
+
+<h2>
+<a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
+
+<p><img src="https://raw.githubusercontent.com/bskim45/MaxHeightScrollView/master/github/screenshot.png" alt="Quick Demo"></p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<p>API Level 8 (Froyo) and above.</p>
+
+<h1>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h1>
+
+<p>The library is pushed to jcenter as an AAR. Just add following dependency to your <code>build.gradle</code> file:</p>
+
+<div class="highlight highlight-source-groovy-gradle"><pre>compile <span class="pl-s"><span class="pl-pds">'</span>com.bskim:maxheightscrollview:1.0.0@aar<span class="pl-pds">'</span></span></pre></div>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Using the library is super easy. Just look at the source code of <a href="https://github.com/bskim45/MaxHeightScrollView/blob/master/app/src/main/java/com/bskim/maxheightscrollview/demo/MainActivity.java">the provided demo</a>.</p>
+
+<h2>
+<a id="using-xml" class="anchor" href="#using-xml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using XML</h2>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">com</span>.bskim.maxheightscrollview.widgets.MaxHeightScrollView
+        <span class="pl-e">xmlns</span><span class="pl-e">:</span><span class="pl-e">app</span>=<span class="pl-s"><span class="pl-pds">"</span>http://schemas.android.com/apk/res-auto<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+        <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>match_parent<span class="pl-pds">"</span></span>
+        <span class="pl-e">app</span><span class="pl-e">:</span><span class="pl-e">maxHeight</span>=<span class="pl-s"><span class="pl-pds">"</span>60dp<span class="pl-pds">"</span></span>&gt;
+
+        <span class="pl-c">&lt;!-- contents you want to add --&gt;</span>
+        &lt;<span class="pl-ent">TextView</span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_width</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">layout_height</span>=<span class="pl-s"><span class="pl-pds">"</span>wrap_content<span class="pl-pds">"</span></span>
+            <span class="pl-e">android</span><span class="pl-e">:</span><span class="pl-e">text</span>=<span class="pl-s"><span class="pl-pds">"</span>Hello World!<span class="pl-pds">"</span></span> /&gt;
+
+    &lt;/<span class="pl-ent">com</span>.bskim.maxheightscrollview.widgets.MaxHeightScrollView&gt;</pre></div>
+
+<h2>
+<a id="using-code" class="anchor" href="#using-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Using code</h2>
+
+<div class="highlight highlight-source-java"><pre><span class="pl-c">// set maxHeight programmatically</span>
+<span class="pl-smi">MaxHeightScrollView</span> sv <span class="pl-k">=</span> (<span class="pl-smi">MaxHeightScrollView</span>) findViewById(<span class="pl-smi">R</span><span class="pl-k">.</span>id<span class="pl-k">.</span>scrollView);
+sv<span class="pl-k">.</span>setMaxHeightDp(<span class="pl-c1">60</span>);        <span class="pl-c">// using dp</span>
+sv<span class="pl-k">.</span>setMaxHeight(<span class="pl-c1">100</span>);         <span class="pl-c">// using pixels</span></pre></div>
+
+<h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h1>
+
+<ul>
+<li>SlickDev - <a href="http://stackoverflow.com/users/929540/slickdev">StackOverFlow</a>
+
+<ul>
+<li>The main concept came from <a href="http://stackoverflow.com/a/33839689/4061803">this stackoverflow article</a>
+</li>
+</ul>
+</li>
+</ul>
+
+<h1>
+<a id="developed-by" class="anchor" href="#developed-by" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Developed By</h1>
+
+<ul>
+<li>Bumsoo Kim (<a href="mailto:bskim45@gmail.com">bskim45@gmail.com</a>) - <a href="https://bsk.im">bsk.im</a>
+</li>
+</ul>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<pre><code>Copyright 2016 Bumsoo Kim
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/bskim45/MaxHeightScrollView">MaxHeightScrollView</a> is maintained by <a href="https://github.com/bskim45">bskim45</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
