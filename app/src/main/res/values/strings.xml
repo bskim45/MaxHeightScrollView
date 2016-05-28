@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MaxHeightScrollViewDemo</string>
+    <string name="lipsum_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus ac ante dolor. Suspendisse posuere justo tortor, blandit sagittis metus pellentesque sit amet.
+        Morbi aliquam ultrices dolor sed commodo. Fusce tincidunt diam turpis, vel efficitur arcu tristique et.
+        Nulla eleifend nisi at augue egestas gravida. Etiam sodales aliquet malesuada.
+        Fusce non elementum tellus. Donec elementum massa velit, quis porta ex rutrum sed.
+        Morbi et fermentum tellus.</string>
+</resources>
