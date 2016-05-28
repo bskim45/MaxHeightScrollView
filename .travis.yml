@@ -14,6 +14,7 @@ android:
 
     # Additional components
     # - extra-google-google_play_services
+    - extra-android-support
     - extra-google-m2repository
     - extra-android-m2repository
     # - addon-google_apis-google-23
@@ -23,18 +24,18 @@ android:
     # - sys-img-armeabi-v7a-android-19
     # - sys-img-x86-android-17
 
-  script:
+script:
     ./gradlew clean assemble --stacktrace
 
-  jdk:
+jdk:
     - oraclejdk7
     - oraclejdk8
 
-  branches:
-    except:
-      - gh-pages
+branches:
+  except:
+    - gh-pages
 
-  notifications:
-    email: false
+notifications:
+  email: false
 
-  sudo: false
+sudo: false
