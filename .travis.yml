@@ -28,7 +28,6 @@ script:
     ./gradlew clean assemble --stacktrace
 
 jdk:
-    - oraclejdk7
     - oraclejdk8
 
 branches:
@@ -37,5 +36,8 @@ branches:
 
 notifications:
   email: false
+  slack:
+    secure: XUQ4lmT94T4mkvhjdmWka+uYYEmP7Oz/Q68d8wVe+dHsgs0IUd6NvB4dGLsQ7CnE/LS++vOrb5J/SMbL8KF28tVnsRWhI+eNoaI3KPjUeuaaX8ZsZRodQwIXtWgIRLetfiPD7mDmL+deHXE13SG0sCTO6dkV3FogJb0/v+u0MxMxuIVGvC1X/lMpYxfkinAuaZ0u0UbmTtB4qW9hbQUvPJCUreNY6h1SxVrPn9KarcTcg5uDnXyhQID4rbPmf+xPRBmkkQlWtVBxVZ3pbR3JxV8GwH1Rjh08AYh8LD5Ww1FYXaS4QDukFd5jAtSGuXUqDfyMFwURQS9sdnHT5rDu8rAqPtdnp49tfqHA96zEjWKDQFlS3pkkfjdOw4sftCP381ZqDW2xojpAy/n9+V5dPu6Vo1m1lf6bHo40Vdn9AKTIJfVSStHTWpN6JfeFLcng7utBZv9iDeYF82zcgbL2x3JPZkkg7w+t5922cwrrUdjsUqm6tYss01n+jXEHnhp37BC6P0x7LvD2mZILC69O5MAysBQx52M2UDXa3mGPjLcyB8IEmp2MU4keR2hgiCJu7xvdP47TTXjd+DKtgqPTZg624Bj+jsZ1xSTpQ5p54qHskjFOTygBFz+p6F8PYb7bomIQIBeVPzyultWPPT7ajad4uUDIRK2E7xIm4JIUskM=
+
 
 sudo: false
