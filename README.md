@@ -1,25 +1,25 @@
-#MaxHeightScrollView [![Build Status](https://travis-ci.org/bskim45/MaxHeightScrollView.svg?branch=master)](https://travis-ci.org/bskim45/MaxHeightScrollView) [ ![Download](https://api.bintray.com/packages/bskim45/maven/maxheightscrollview/images/download.svg) ](https://bintray.com/bskim45/maven/maxheightscrollview/_latestVersion)
+# MaxHeightScrollView [![Build Status](https://travis-ci.org/bskim45/MaxHeightScrollView.svg?branch=master)](https://travis-ci.org/bskim45/MaxHeightScrollView) [ ![Download](https://api.bintray.com/packages/bskim45/maven/maxheightscrollview/images/download.svg) ](https://bintray.com/bskim45/maven/maxheightscrollview/_latestVersion)
 
 The **MaxHeightScrollView** is a android library allows to set maximum height of ScrollView(NestedScrollView).
 
-#Preview
-##Demo
+# Preview
+## Demo
 You can try demo application from [here](https://github.com/bskim45/MaxHeightScrollView/raw/master/app/app.apk), or you can clone this project and build your own.
 
-##Screenshots
+## Screenshots
 <img src="/github/screenshot.png?raw=true" width=411 height=731 alt="Quick Demo">
 
-#Requirements
+# Requirements
 API Level 8 (Froyo) and above.
 
-#Setup
+# Setup
 The library is pushed to jcenter as an AAR. Just add following dependency to your `build.gradle` file:
 
 ```gradle
 compile 'com.bskim:maxheightscrollview:1.0.0@aar'
 ```
 
-#Usage
+# Usage
 Using the library is super easy. Just look at the source code of [the provided demo](https://github.com/bskim45/MaxHeightScrollView/blob/master/app/src/main/java/com/bskim/maxheightscrollview/demo/MainActivity.java).
 
 ## Using XML
@@ -48,14 +48,14 @@ sv.setMaxHeight(100);         // using pixels
 ```
 
 
-#Credits
+# Credits
 - SlickDev - [StackOverFlow](http://stackoverflow.com/users/929540/slickdev)
-	- The main concept came from [this stackoverflow article](http://stackoverflow.com/a/33839689/4061803)
+- The main concept came from [this stackoverflow article](http://stackoverflow.com/a/33839689/4061803)
 
-#Developed By
+# Developed By
 * Bumsoo Kim (<bskim45@gmail.com>) - [bsk.im](https://bsk.im)
 
-#License
+# License
     Copyright 2016 Bumsoo Kim
 
     Licensed under the Apache License, Version 2.0 (the "License");
